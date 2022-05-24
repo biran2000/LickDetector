@@ -6,21 +6,21 @@ multianimalproject: false
 identity:
 
     # Project path (change when moving around)
-project_path: C:\[yourpath]\GitHub\LickDetector
+project_path: C:/Users/EnnyB/Documents/GitHub/LickDetector
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
-  C:\Users\Experiment\Desktop\dlc\tongue\videos\2022-03-01_104_EB013_eyeCamLeft.mj2:
+  \2022-03-01_104_EB013_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
-  C:\Users\Experiment\Desktop\dlc\tongue\videos\2022-03-17_101_EB013_eyeCamLeft.mj2:
+  \2022-03-17_101_EB013_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
-  C:\Users\Experiment\Desktop\dlc\tongue\videos\2022-03-30_101_EB015_eyeCamLeft.mj2:
+  \2022-03-30_101_EB015_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
-  C:\Users\Experiment\Desktop\dlc\tongue\videos\2022-04-04_101_EB014_eyeCamLeft.mj2:
+  \2022-04-04_101_EB014_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
-  C:\Users\Experiment\Desktop\dlc\tongue\videos\2022-04-25_102_EB015_eyeCamLeft.mj2:
+  \2022-04-25_102_EB015_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
-  C:\Users\Experiment\Desktop\dlc\tongue\videos\2022-05-04_103_EB014_eyeCamLeft.mj2:
+  \videos\2022-05-04_103_EB014_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
 bodyparts:
 - pupil_top
@@ -39,6 +39,8 @@ bodyparts:
 - mouth
 - tongue
 - watertube
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
 start: 0
 stop: 1
 numframes2pick: 40
