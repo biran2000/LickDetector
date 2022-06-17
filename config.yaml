@@ -20,7 +20,7 @@ video_sets:
     crop: 0, 640, 0, 480
   \2022-04-25_102_EB015_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
-  \videos\2022-05-04_103_EB014_eyeCamLeft.mj2:
+  \2022-05-04_103_EB014_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
 bodyparts:
 - pupil_top
