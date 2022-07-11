@@ -1,0 +1,6 @@
+model_checkpoint_path: "C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-300000"
+all_model_checkpoint_paths: "C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-180000"
+all_model_checkpoint_paths: "C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-210000"
+all_model_checkpoint_paths: "C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-240000"
+all_model_checkpoint_paths: "C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-270000"
+all_model_checkpoint_paths: "C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-300000"

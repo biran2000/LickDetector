@@ -1,0 +1,723 @@
+2022-05-27 14:25:53 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['pupil_top',
+                      'pupil_bot',
+                      'pupil_right',
+                      'pupil_left',
+                      'lid_top',
+                      'lid_bot',
+                      'corner_right',
+                      'corner_left',
+                      'nose_tip',
+                      'whisker1',
+                      'whisker2',
+                      'whisker3',
+                      'nose_bot',
+                      'mouth',
+                      'tongue',
+                      'watertube'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-11\\UnaugmentedDataSet_PupilDetectorApr28\\PupilDetector_cortex_lab95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': 'C:\\Users\\Experiment\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-11\\UnaugmentedDataSet_PupilDetectorApr28\\Documentation_data-PupilDetector_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': 'C:\\Users\\Experiment\\Desktop\\dlc\\tongue',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-05-27 14:46:02 iteration: 1000 loss: 0.0317 lr: 0.005
+2022-05-27 15:06:48 iteration: 2000 loss: 0.0179 lr: 0.005
+2022-05-27 15:28:56 iteration: 3000 loss: 0.0146 lr: 0.005
+2022-05-27 15:50:46 iteration: 4000 loss: 0.0128 lr: 0.005
+2022-05-27 16:13:01 iteration: 5000 loss: 0.0116 lr: 0.005
+2022-05-27 16:35:03 iteration: 6000 loss: 0.0108 lr: 0.005
+2022-05-27 16:57:27 iteration: 7000 loss: 0.0104 lr: 0.005
+2022-05-27 17:19:41 iteration: 8000 loss: 0.0099 lr: 0.005
+2022-05-27 17:41:29 iteration: 9000 loss: 0.0094 lr: 0.005
+2022-05-27 18:03:21 iteration: 10000 loss: 0.0091 lr: 0.005
+2022-05-27 18:25:39 iteration: 11000 loss: 0.0112 lr: 0.02
+2022-05-27 18:47:21 iteration: 12000 loss: 0.0097 lr: 0.02
+2022-05-27 19:09:26 iteration: 13000 loss: 0.0093 lr: 0.02
+2022-05-27 19:31:16 iteration: 14000 loss: 0.0084 lr: 0.02
+2022-05-27 19:53:00 iteration: 15000 loss: 0.0078 lr: 0.02
+2022-05-27 20:14:53 iteration: 16000 loss: 0.0075 lr: 0.02
+2022-05-27 20:36:55 iteration: 17000 loss: 0.0075 lr: 0.02
+2022-05-27 20:59:01 iteration: 18000 loss: 0.0072 lr: 0.02
+2022-05-27 21:19:19 iteration: 19000 loss: 0.0070 lr: 0.02
+2022-05-27 21:40:16 iteration: 20000 loss: 0.0069 lr: 0.02
+2022-05-27 22:02:16 iteration: 21000 loss: 0.0068 lr: 0.02
+2022-05-27 22:24:17 iteration: 22000 loss: 0.0065 lr: 0.02
+2022-05-27 22:46:02 iteration: 23000 loss: 0.0064 lr: 0.02
+2022-05-27 23:08:09 iteration: 24000 loss: 0.0065 lr: 0.02
+2022-05-27 23:30:05 iteration: 25000 loss: 0.0063 lr: 0.02
+2022-05-27 23:52:16 iteration: 26000 loss: 0.0059 lr: 0.02
+2022-05-28 00:13:50 iteration: 27000 loss: 0.0059 lr: 0.02
+2022-05-28 00:34:31 iteration: 28000 loss: 0.0059 lr: 0.02
+2022-05-28 00:55:18 iteration: 29000 loss: 0.0058 lr: 0.02
+2022-05-28 01:17:31 iteration: 30000 loss: 0.0056 lr: 0.02
+2022-05-28 01:39:13 iteration: 31000 loss: 0.0056 lr: 0.02
+2022-05-28 02:01:46 iteration: 32000 loss: 0.0056 lr: 0.02
+2022-05-28 02:23:28 iteration: 33000 loss: 0.0055 lr: 0.02
+2022-05-28 02:45:33 iteration: 34000 loss: 0.0055 lr: 0.02
+2022-05-28 03:07:22 iteration: 35000 loss: 0.0054 lr: 0.02
+2022-05-28 03:29:43 iteration: 36000 loss: 0.0054 lr: 0.02
+2022-05-28 03:51:16 iteration: 37000 loss: 0.0050 lr: 0.02
+2022-05-28 04:13:54 iteration: 38000 loss: 0.0053 lr: 0.02
+2022-05-28 04:36:16 iteration: 39000 loss: 0.0050 lr: 0.02
+2022-05-28 04:57:57 iteration: 40000 loss: 0.0050 lr: 0.02
+2022-05-28 05:19:47 iteration: 41000 loss: 0.0051 lr: 0.02
+2022-05-28 05:41:46 iteration: 42000 loss: 0.0051 lr: 0.02
+2022-05-28 06:03:06 iteration: 43000 loss: 0.0050 lr: 0.02
+2022-05-28 06:23:25 iteration: 44000 loss: 0.0049 lr: 0.02
+2022-05-28 06:45:20 iteration: 45000 loss: 0.0048 lr: 0.02
+2022-05-28 07:07:18 iteration: 46000 loss: 0.0048 lr: 0.02
+2022-05-28 07:29:03 iteration: 47000 loss: 0.0047 lr: 0.02
+2022-05-28 07:51:16 iteration: 48000 loss: 0.0047 lr: 0.02
+2022-05-28 08:13:36 iteration: 49000 loss: 0.0048 lr: 0.02
+2022-05-28 08:35:27 iteration: 50000 loss: 0.0047 lr: 0.02
+2022-05-28 08:57:04 iteration: 51000 loss: 0.0047 lr: 0.02
+2022-05-28 09:19:14 iteration: 52000 loss: 0.0047 lr: 0.02
+2022-05-28 09:41:32 iteration: 53000 loss: 0.0048 lr: 0.02
+2022-05-28 10:03:53 iteration: 54000 loss: 0.0046 lr: 0.02
+2022-05-28 10:25:35 iteration: 55000 loss: 0.0045 lr: 0.02
+2022-05-28 10:47:25 iteration: 56000 loss: 0.0045 lr: 0.02
+2022-05-28 11:09:31 iteration: 57000 loss: 0.0044 lr: 0.02
+2022-05-28 11:31:48 iteration: 58000 loss: 0.0045 lr: 0.02
+2022-05-28 11:53:58 iteration: 59000 loss: 0.0044 lr: 0.02
+2022-05-28 12:15:44 iteration: 60000 loss: 0.0043 lr: 0.02
+2022-05-28 12:37:36 iteration: 61000 loss: 0.0044 lr: 0.02
+2022-05-28 12:59:44 iteration: 62000 loss: 0.0045 lr: 0.02
+2022-05-28 13:22:35 iteration: 63000 loss: 0.0043 lr: 0.02
+2022-05-28 13:44:39 iteration: 64000 loss: 0.0043 lr: 0.02
+2022-05-28 14:06:54 iteration: 65000 loss: 0.0043 lr: 0.02
+2022-05-28 14:29:17 iteration: 66000 loss: 0.0042 lr: 0.02
+2022-05-28 14:51:15 iteration: 67000 loss: 0.0042 lr: 0.02
+2022-05-28 15:13:32 iteration: 68000 loss: 0.0043 lr: 0.02
+2022-05-28 15:35:16 iteration: 69000 loss: 0.0042 lr: 0.02
+2022-05-28 15:56:45 iteration: 70000 loss: 0.0041 lr: 0.02
+2022-05-28 16:18:49 iteration: 71000 loss: 0.0041 lr: 0.02
+2022-05-28 16:41:01 iteration: 72000 loss: 0.0040 lr: 0.02
+2022-05-28 17:03:26 iteration: 73000 loss: 0.0041 lr: 0.02
+2022-05-28 17:25:17 iteration: 74000 loss: 0.0040 lr: 0.02
+2022-05-28 17:47:17 iteration: 75000 loss: 0.0040 lr: 0.02
+2022-05-28 18:09:24 iteration: 76000 loss: 0.0042 lr: 0.02
+2022-05-28 18:31:23 iteration: 77000 loss: 0.0040 lr: 0.02
+2022-05-28 18:53:56 iteration: 78000 loss: 0.0040 lr: 0.02
+2022-05-28 19:16:13 iteration: 79000 loss: 0.0040 lr: 0.02
+2022-05-28 19:38:50 iteration: 80000 loss: 0.0039 lr: 0.02
+2022-05-28 20:01:03 iteration: 81000 loss: 0.0040 lr: 0.02
+2022-05-28 20:23:03 iteration: 82000 loss: 0.0038 lr: 0.02
+2022-05-28 20:45:19 iteration: 83000 loss: 0.0040 lr: 0.02
+2022-05-28 21:07:28 iteration: 84000 loss: 0.0040 lr: 0.02
+2022-05-28 21:29:16 iteration: 85000 loss: 0.0040 lr: 0.02
+2022-05-28 21:51:35 iteration: 86000 loss: 0.0038 lr: 0.02
+2022-05-28 22:13:22 iteration: 87000 loss: 0.0039 lr: 0.02
+2022-05-28 22:35:07 iteration: 88000 loss: 0.0039 lr: 0.02
+2022-05-28 22:57:02 iteration: 89000 loss: 0.0038 lr: 0.02
+2022-05-28 23:19:00 iteration: 90000 loss: 0.0037 lr: 0.02
+2022-05-28 23:41:15 iteration: 91000 loss: 0.0037 lr: 0.02
+2022-05-29 00:03:18 iteration: 92000 loss: 0.0038 lr: 0.02
+2022-05-29 00:25:31 iteration: 93000 loss: 0.0038 lr: 0.02
+2022-05-29 00:47:32 iteration: 94000 loss: 0.0037 lr: 0.02
+2022-05-29 01:09:42 iteration: 95000 loss: 0.0038 lr: 0.02
+2022-05-29 01:31:38 iteration: 96000 loss: 0.0037 lr: 0.02
+2022-05-29 01:53:37 iteration: 97000 loss: 0.0037 lr: 0.02
+2022-05-29 02:15:55 iteration: 98000 loss: 0.0036 lr: 0.02
+2022-05-29 02:38:03 iteration: 99000 loss: 0.0035 lr: 0.02
+2022-05-29 03:00:00 iteration: 100000 loss: 0.0037 lr: 0.02
+2022-05-29 03:21:44 iteration: 101000 loss: 0.0036 lr: 0.02
+2022-05-29 03:44:18 iteration: 102000 loss: 0.0037 lr: 0.02
+2022-05-29 04:06:21 iteration: 103000 loss: 0.0037 lr: 0.02
+2022-05-29 04:28:12 iteration: 104000 loss: 0.0037 lr: 0.02
+2022-05-29 04:50:05 iteration: 105000 loss: 0.0036 lr: 0.02
+2022-05-29 05:11:57 iteration: 106000 loss: 0.0036 lr: 0.02
+2022-05-29 05:33:53 iteration: 107000 loss: 0.0035 lr: 0.02
+2022-05-29 05:56:06 iteration: 108000 loss: 0.0035 lr: 0.02
+2022-05-29 06:17:39 iteration: 109000 loss: 0.0034 lr: 0.02
+2022-05-29 06:39:45 iteration: 110000 loss: 0.0035 lr: 0.02
+2022-05-29 07:01:45 iteration: 111000 loss: 0.0035 lr: 0.02
+2022-05-29 07:23:27 iteration: 112000 loss: 0.0035 lr: 0.02
+2022-05-29 07:45:24 iteration: 113000 loss: 0.0035 lr: 0.02
+2022-05-29 08:07:48 iteration: 114000 loss: 0.0034 lr: 0.02
+2022-05-29 08:29:50 iteration: 115000 loss: 0.0034 lr: 0.02
+2022-05-29 08:51:43 iteration: 116000 loss: 0.0034 lr: 0.02
+2022-05-29 09:13:25 iteration: 117000 loss: 0.0035 lr: 0.02
+2022-05-29 09:35:25 iteration: 118000 loss: 0.0035 lr: 0.02
+2022-05-29 09:57:23 iteration: 119000 loss: 0.0034 lr: 0.02
+2022-05-29 10:19:32 iteration: 120000 loss: 0.0034 lr: 0.02
+2022-05-29 10:41:31 iteration: 121000 loss: 0.0033 lr: 0.02
+2022-05-29 11:03:18 iteration: 122000 loss: 0.0033 lr: 0.02
+2022-05-29 11:25:25 iteration: 123000 loss: 0.0033 lr: 0.02
+2022-05-29 11:47:12 iteration: 124000 loss: 0.0033 lr: 0.02
+2022-05-29 12:09:21 iteration: 125000 loss: 0.0033 lr: 0.02
+2022-05-29 12:30:49 iteration: 126000 loss: 0.0033 lr: 0.02
+2022-05-29 12:53:15 iteration: 127000 loss: 0.0032 lr: 0.02
+2022-05-29 13:14:51 iteration: 128000 loss: 0.0033 lr: 0.02
+2022-05-29 13:36:28 iteration: 129000 loss: 0.0033 lr: 0.02
+2022-05-29 13:58:48 iteration: 130000 loss: 0.0033 lr: 0.02
+2022-05-29 14:20:49 iteration: 131000 loss: 0.0032 lr: 0.02
+2022-05-29 14:43:39 iteration: 132000 loss: 0.0032 lr: 0.02
+2022-05-29 15:05:50 iteration: 133000 loss: 0.0032 lr: 0.02
+2022-05-29 15:27:28 iteration: 134000 loss: 0.0032 lr: 0.02
+2022-05-29 15:49:08 iteration: 135000 loss: 0.0032 lr: 0.02
+2022-05-29 16:11:04 iteration: 136000 loss: 0.0032 lr: 0.02
+2022-05-29 16:33:26 iteration: 137000 loss: 0.0032 lr: 0.02
+2022-05-29 16:55:17 iteration: 138000 loss: 0.0031 lr: 0.02
+2022-05-29 17:16:40 iteration: 139000 loss: 0.0031 lr: 0.02
+2022-05-29 17:38:40 iteration: 140000 loss: 0.0032 lr: 0.02
+2022-05-29 18:00:48 iteration: 141000 loss: 0.0031 lr: 0.02
+2022-05-29 18:22:29 iteration: 142000 loss: 0.0031 lr: 0.02
+2022-05-29 18:44:31 iteration: 143000 loss: 0.0030 lr: 0.02
+2022-05-29 19:07:04 iteration: 144000 loss: 0.0031 lr: 0.02
+2022-05-29 19:29:13 iteration: 145000 loss: 0.0031 lr: 0.02
+2022-05-29 19:51:43 iteration: 146000 loss: 0.0031 lr: 0.02
+2022-05-29 20:13:46 iteration: 147000 loss: 0.0031 lr: 0.02
+2022-05-29 20:36:12 iteration: 148000 loss: 0.0031 lr: 0.02
+2022-05-29 20:58:41 iteration: 149000 loss: 0.0031 lr: 0.02
+2022-05-29 21:20:49 iteration: 150000 loss: 0.0031 lr: 0.02
+2022-05-29 21:43:39 iteration: 151000 loss: 0.0031 lr: 0.02
+2022-05-29 22:05:42 iteration: 152000 loss: 0.0030 lr: 0.02
+2022-05-29 22:27:55 iteration: 153000 loss: 0.0032 lr: 0.02
+2022-05-29 22:49:51 iteration: 154000 loss: 0.0030 lr: 0.02
+2022-05-29 23:12:13 iteration: 155000 loss: 0.0031 lr: 0.02
+2022-05-29 23:34:08 iteration: 156000 loss: 0.0031 lr: 0.02
+2022-05-29 23:56:35 iteration: 157000 loss: 0.0031 lr: 0.02
+2022-05-30 00:18:36 iteration: 158000 loss: 0.0030 lr: 0.02
+2022-05-30 00:41:19 iteration: 159000 loss: 0.0029 lr: 0.02
+2022-05-30 01:03:33 iteration: 160000 loss: 0.0030 lr: 0.02
+2022-05-30 01:25:26 iteration: 161000 loss: 0.0029 lr: 0.02
+2022-05-30 01:47:32 iteration: 162000 loss: 0.0029 lr: 0.02
+2022-05-30 02:09:54 iteration: 163000 loss: 0.0029 lr: 0.02
+2022-05-30 02:32:28 iteration: 164000 loss: 0.0029 lr: 0.02
+2022-05-30 02:54:48 iteration: 165000 loss: 0.0030 lr: 0.02
+2022-05-30 03:16:44 iteration: 166000 loss: 0.0029 lr: 0.02
+2022-05-30 03:38:38 iteration: 167000 loss: 0.0030 lr: 0.02
+2022-05-30 04:00:34 iteration: 168000 loss: 0.0029 lr: 0.02
+2022-05-30 04:22:38 iteration: 169000 loss: 0.0029 lr: 0.02
+2022-05-30 04:44:58 iteration: 170000 loss: 0.0030 lr: 0.02
+2022-05-30 05:07:17 iteration: 171000 loss: 0.0029 lr: 0.02
+2022-05-30 05:29:01 iteration: 172000 loss: 0.0028 lr: 0.02
+2022-05-30 05:51:38 iteration: 173000 loss: 0.0029 lr: 0.02
+2022-05-30 06:14:07 iteration: 174000 loss: 0.0029 lr: 0.02
+2022-05-30 06:36:35 iteration: 175000 loss: 0.0029 lr: 0.02
+2022-05-30 06:58:27 iteration: 176000 loss: 0.0029 lr: 0.02
+2022-05-30 07:20:40 iteration: 177000 loss: 0.0029 lr: 0.02
+2022-05-30 07:42:43 iteration: 178000 loss: 0.0028 lr: 0.02
+2022-05-30 08:05:07 iteration: 179000 loss: 0.0028 lr: 0.02
+2022-05-30 08:27:31 iteration: 180000 loss: 0.0028 lr: 0.02
+2022-05-30 08:49:18 iteration: 181000 loss: 0.0027 lr: 0.02
+2022-05-30 09:11:28 iteration: 182000 loss: 0.0028 lr: 0.02
+2022-05-30 09:33:47 iteration: 183000 loss: 0.0028 lr: 0.02
+2022-05-30 09:55:29 iteration: 184000 loss: 0.0028 lr: 0.02
+2022-05-30 10:17:51 iteration: 185000 loss: 0.0028 lr: 0.02
+2022-05-30 10:38:33 iteration: 186000 loss: 0.0028 lr: 0.02
+2022-05-30 10:59:55 iteration: 187000 loss: 0.0028 lr: 0.02
+2022-05-30 11:21:48 iteration: 188000 loss: 0.0028 lr: 0.02
+2022-05-30 11:47:42 iteration: 189000 loss: 0.0028 lr: 0.02
+2022-05-30 12:13:59 iteration: 190000 loss: 0.0028 lr: 0.02
+2022-05-30 12:39:12 iteration: 191000 loss: 0.0027 lr: 0.02
+2022-05-30 13:05:36 iteration: 192000 loss: 0.0027 lr: 0.02
+2022-05-30 13:31:40 iteration: 193000 loss: 0.0027 lr: 0.02
+2022-05-30 13:58:18 iteration: 194000 loss: 0.0027 lr: 0.02
+2022-05-30 14:24:35 iteration: 195000 loss: 0.0027 lr: 0.02
+2022-05-30 14:46:54 iteration: 196000 loss: 0.0027 lr: 0.02
+2022-05-30 15:07:26 iteration: 197000 loss: 0.0027 lr: 0.02
+2022-05-30 15:32:05 iteration: 198000 loss: 0.0027 lr: 0.02
+2022-05-30 15:57:08 iteration: 199000 loss: 0.0027 lr: 0.02
+2022-05-30 16:21:13 iteration: 200000 loss: 0.0027 lr: 0.02
+2022-05-30 16:42:01 iteration: 201000 loss: 0.0028 lr: 0.02
+2022-05-30 17:03:45 iteration: 202000 loss: 0.0027 lr: 0.02
+2022-05-30 17:26:12 iteration: 203000 loss: 0.0027 lr: 0.02
+2022-05-30 17:48:32 iteration: 204000 loss: 0.0026 lr: 0.02
+2022-05-30 18:10:25 iteration: 205000 loss: 0.0027 lr: 0.02
+2022-05-30 18:32:54 iteration: 206000 loss: 0.0027 lr: 0.02
+2022-05-30 18:54:53 iteration: 207000 loss: 0.0027 lr: 0.02
+2022-05-30 19:16:54 iteration: 208000 loss: 0.0027 lr: 0.02
+2022-05-30 19:38:55 iteration: 209000 loss: 0.0027 lr: 0.02
+2022-05-30 20:01:23 iteration: 210000 loss: 0.0026 lr: 0.02
+2022-05-30 20:23:47 iteration: 211000 loss: 0.0026 lr: 0.02
+2022-05-30 20:45:55 iteration: 212000 loss: 0.0025 lr: 0.02
+2022-05-30 21:08:37 iteration: 213000 loss: 0.0026 lr: 0.02
+2022-05-30 21:31:30 iteration: 214000 loss: 0.0026 lr: 0.02
+2022-05-30 21:53:39 iteration: 215000 loss: 0.0026 lr: 0.02
+2022-05-30 22:16:14 iteration: 216000 loss: 0.0026 lr: 0.02
+2022-05-30 22:38:42 iteration: 217000 loss: 0.0026 lr: 0.02
+2022-05-30 23:00:49 iteration: 218000 loss: 0.0026 lr: 0.02
+2022-05-30 23:22:49 iteration: 219000 loss: 0.0026 lr: 0.02
+2022-05-30 23:45:13 iteration: 220000 loss: 0.0026 lr: 0.02
+2022-05-31 00:07:21 iteration: 221000 loss: 0.0026 lr: 0.02
+2022-05-31 00:29:36 iteration: 222000 loss: 0.0026 lr: 0.02
+2022-05-31 00:52:07 iteration: 223000 loss: 0.0026 lr: 0.02
+2022-05-31 01:14:13 iteration: 224000 loss: 0.0026 lr: 0.02
+2022-05-31 01:36:23 iteration: 225000 loss: 0.0026 lr: 0.02
+2022-05-31 01:58:26 iteration: 226000 loss: 0.0026 lr: 0.02
+2022-05-31 02:18:59 iteration: 227000 loss: 0.0026 lr: 0.02
+2022-05-31 02:40:50 iteration: 228000 loss: 0.0027 lr: 0.02
+2022-05-31 03:03:15 iteration: 229000 loss: 0.0026 lr: 0.02
+2022-05-31 03:25:17 iteration: 230000 loss: 0.0025 lr: 0.02
+2022-05-31 03:48:01 iteration: 231000 loss: 0.0026 lr: 0.02
+2022-05-31 04:10:21 iteration: 232000 loss: 0.0025 lr: 0.02
+2022-05-31 04:32:54 iteration: 233000 loss: 0.0027 lr: 0.02
+2022-05-31 04:55:16 iteration: 234000 loss: 0.0025 lr: 0.02
+2022-05-31 05:18:01 iteration: 235000 loss: 0.0026 lr: 0.02
+2022-05-31 05:40:16 iteration: 236000 loss: 0.0025 lr: 0.02
+2022-05-31 06:02:54 iteration: 237000 loss: 0.0026 lr: 0.02
+2022-05-31 06:25:19 iteration: 238000 loss: 0.0026 lr: 0.02
+2022-05-31 06:47:44 iteration: 239000 loss: 0.0026 lr: 0.02
+2022-05-31 07:09:48 iteration: 240000 loss: 0.0026 lr: 0.02
+2022-05-31 07:31:52 iteration: 241000 loss: 0.0025 lr: 0.02
+2022-05-31 07:54:17 iteration: 242000 loss: 0.0025 lr: 0.02
+2022-05-31 08:15:48 iteration: 243000 loss: 0.0025 lr: 0.02
+2022-05-31 08:38:29 iteration: 244000 loss: 0.0025 lr: 0.02
+2022-05-31 09:00:13 iteration: 245000 loss: 0.0025 lr: 0.02
+2022-05-31 09:22:48 iteration: 246000 loss: 0.0025 lr: 0.02
+2022-05-31 09:45:57 iteration: 247000 loss: 0.0025 lr: 0.02
+2022-05-31 10:07:57 iteration: 248000 loss: 0.0025 lr: 0.02
+2022-05-31 10:29:46 iteration: 249000 loss: 0.0025 lr: 0.02
+2022-05-31 10:51:48 iteration: 250000 loss: 0.0025 lr: 0.02
+2022-05-31 11:13:30 iteration: 251000 loss: 0.0024 lr: 0.02
+2022-05-31 11:35:02 iteration: 252000 loss: 0.0025 lr: 0.02
+2022-05-31 11:57:07 iteration: 253000 loss: 0.0025 lr: 0.02
+2022-05-31 12:21:09 iteration: 254000 loss: 0.0025 lr: 0.02
+2022-05-31 12:46:18 iteration: 255000 loss: 0.0025 lr: 0.02
+2022-05-31 13:11:36 iteration: 256000 loss: 0.0024 lr: 0.02
+2022-05-31 13:37:11 iteration: 257000 loss: 0.0025 lr: 0.02
+2022-05-31 14:02:11 iteration: 258000 loss: 0.0025 lr: 0.02
+2022-05-31 14:27:28 iteration: 259000 loss: 0.0025 lr: 0.02
+2022-05-31 14:52:34 iteration: 260000 loss: 0.0025 lr: 0.02
+2022-05-31 15:17:57 iteration: 261000 loss: 0.0024 lr: 0.02
+2022-05-31 15:43:56 iteration: 262000 loss: 0.0024 lr: 0.02
+2022-05-31 16:06:43 iteration: 263000 loss: 0.0024 lr: 0.02
+2022-05-31 16:27:04 iteration: 264000 loss: 0.0024 lr: 0.02
+2022-05-31 16:49:31 iteration: 265000 loss: 0.0024 lr: 0.02
+2022-05-31 17:11:59 iteration: 266000 loss: 0.0024 lr: 0.02
+2022-05-31 17:33:54 iteration: 267000 loss: 0.0024 lr: 0.02
+2022-05-31 17:56:25 iteration: 268000 loss: 0.0024 lr: 0.02
+2022-05-31 18:18:53 iteration: 269000 loss: 0.0024 lr: 0.02
+2022-05-31 18:40:46 iteration: 270000 loss: 0.0024 lr: 0.02
+2022-05-31 19:03:06 iteration: 271000 loss: 0.0024 lr: 0.02
+2022-05-31 19:25:25 iteration: 272000 loss: 0.0024 lr: 0.02
+2022-05-31 19:47:04 iteration: 273000 loss: 0.0024 lr: 0.02
+2022-05-31 20:09:15 iteration: 274000 loss: 0.0024 lr: 0.02
+2022-05-31 20:31:24 iteration: 275000 loss: 0.0024 lr: 0.02
+2022-05-31 20:53:53 iteration: 276000 loss: 0.0024 lr: 0.02
+2022-05-31 21:16:07 iteration: 277000 loss: 0.0024 lr: 0.02
+2022-05-31 21:38:37 iteration: 278000 loss: 0.0023 lr: 0.02
+2022-05-31 21:59:30 iteration: 279000 loss: 0.0024 lr: 0.02
+2022-05-31 22:20:03 iteration: 280000 loss: 0.0024 lr: 0.02
+2022-05-31 22:42:19 iteration: 281000 loss: 0.0024 lr: 0.02
+2022-05-31 23:04:34 iteration: 282000 loss: 0.0024 lr: 0.02
+2022-05-31 23:26:45 iteration: 283000 loss: 0.0024 lr: 0.02
+2022-05-31 23:48:39 iteration: 284000 loss: 0.0024 lr: 0.02
+2022-06-01 00:10:38 iteration: 285000 loss: 0.0023 lr: 0.02
+2022-06-01 00:32:46 iteration: 286000 loss: 0.0023 lr: 0.02
+2022-06-01 00:55:17 iteration: 287000 loss: 0.0024 lr: 0.02
+2022-06-01 01:17:27 iteration: 288000 loss: 0.0025 lr: 0.02
+2022-06-01 01:39:47 iteration: 289000 loss: 0.0024 lr: 0.02
+2022-06-01 02:01:37 iteration: 290000 loss: 0.0023 lr: 0.02
+2022-06-01 02:23:28 iteration: 291000 loss: 0.0024 lr: 0.02
+2022-06-01 02:45:32 iteration: 292000 loss: 0.0023 lr: 0.02
+2022-06-01 03:07:55 iteration: 293000 loss: 0.0023 lr: 0.02
+2022-06-01 03:29:48 iteration: 294000 loss: 0.0023 lr: 0.02
+2022-06-01 03:52:20 iteration: 295000 loss: 0.0023 lr: 0.02
+2022-06-01 04:14:32 iteration: 296000 loss: 0.0025 lr: 0.02
+2022-06-01 04:36:13 iteration: 297000 loss: 0.0024 lr: 0.02
+2022-06-01 04:58:20 iteration: 298000 loss: 0.0024 lr: 0.02
+2022-06-01 05:20:31 iteration: 299000 loss: 0.0023 lr: 0.02
+2022-06-01 05:42:48 iteration: 300000 loss: 0.0023 lr: 0.02
+2022-06-01 11:25:20 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['pupil_top',
+                      'pupil_bot',
+                      'pupil_right',
+                      'pupil_left',
+                      'lid_top',
+                      'lid_bot',
+                      'corner_right',
+                      'corner_left',
+                      'nose_tip',
+                      'whisker1',
+                      'whisker2',
+                      'whisker3',
+                      'nose_bot',
+                      'mouth',
+                      'tongue',
+                      'watertube'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-11\\UnaugmentedDataSet_PupilDetectorApr28\\PupilDetector_cortex_lab95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Experiment\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-06-06 09:37:39 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['pupil_top',
+                      'pupil_bot',
+                      'pupil_right',
+                      'pupil_left',
+                      'lid_top',
+                      'lid_bot',
+                      'corner_right',
+                      'corner_left',
+                      'nose_tip',
+                      'whisker1',
+                      'whisker2',
+                      'whisker3',
+                      'nose_bot',
+                      'mouth',
+                      'tongue',
+                      'watertube'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-11\\UnaugmentedDataSet_PupilDetectorApr28\\PupilDetector_cortex_lab95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Experiment\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-06-06 09:39:33 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['pupil_top',
+                      'pupil_bot',
+                      'pupil_right',
+                      'pupil_left',
+                      'lid_top',
+                      'lid_bot',
+                      'corner_right',
+                      'corner_left',
+                      'nose_tip',
+                      'whisker1',
+                      'whisker2',
+                      'whisker3',
+                      'nose_bot',
+                      'mouth',
+                      'tongue',
+                      'watertube'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-11\\UnaugmentedDataSet_PupilDetectorApr28\\PupilDetector_cortex_lab95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Experiment\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-06-06 09:46:46 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['pupil_top',
+                      'pupil_bot',
+                      'pupil_right',
+                      'pupil_left',
+                      'lid_top',
+                      'lid_bot',
+                      'corner_right',
+                      'corner_left',
+                      'nose_tip',
+                      'whisker1',
+                      'whisker2',
+                      'whisker3',
+                      'nose_bot',
+                      'mouth',
+                      'tongue',
+                      'watertube'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-11\\UnaugmentedDataSet_PupilDetectorApr28\\PupilDetector_cortex_lab95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Experiment\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-06-06 09:47:25 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['pupil_top',
+                      'pupil_bot',
+                      'pupil_right',
+                      'pupil_left',
+                      'lid_top',
+                      'lid_bot',
+                      'corner_right',
+                      'corner_left',
+                      'nose_tip',
+                      'whisker1',
+                      'whisker2',
+                      'whisker3',
+                      'nose_bot',
+                      'mouth',
+                      'tongue',
+                      'watertube'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-11\\UnaugmentedDataSet_PupilDetectorApr28\\PupilDetector_cortex_lab95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\Experiment\\anaconda3\\envs\\deeplabcut\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\Experiment\\Desktop\\dlc\\tongue\\dlc-models\\iteration-11\\PupilDetectorApr28-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
