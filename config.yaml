@@ -6,7 +6,7 @@ multianimalproject: false
 identity:
 
     # Project path (change when moving around)
-project_path: C:\[yourpath]\GitHub\LickDetector
+project_path: C:\Users\Experiment\Documents\Github\LickDetector\
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
@@ -58,7 +58,7 @@ colormap: jet
     # Training,Evaluation and Analysis configuration
 TrainingFraction:
 - 0.95
-iteration: 8
+iteration: 11
 default_net_type: resnet_50
 default_augmenter: default
 snapshotindex: -1
