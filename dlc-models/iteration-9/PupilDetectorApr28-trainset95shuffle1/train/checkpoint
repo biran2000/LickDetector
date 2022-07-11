@@ -1,0 +1,5 @@
+model_checkpoint_path: "C:\\Users\\EnnyB\\Documents\\GitHub\\LickDetector\\dlc-models\\iteration-9\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-200000"
+all_model_checkpoint_paths: "C:\\Users\\EnnyB\\Documents\\GitHub\\LickDetector\\dlc-models\\iteration-9\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-50000"
+all_model_checkpoint_paths: "C:\\Users\\EnnyB\\Documents\\GitHub\\LickDetector\\dlc-models\\iteration-9\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-100000"
+all_model_checkpoint_paths: "C:\\Users\\EnnyB\\Documents\\GitHub\\LickDetector\\dlc-models\\iteration-9\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-150000"
+all_model_checkpoint_paths: "C:\\Users\\EnnyB\\Documents\\GitHub\\LickDetector\\dlc-models\\iteration-9\\PupilDetectorApr28-trainset95shuffle1\\train\\snapshot-200000"

@@ -22,6 +22,12 @@ video_sets:
     crop: 0, 640, 0, 480
   \2022-05-04_103_EB014_eyeCamLeft.mj2:
     crop: 0, 640, 0, 480
+  \2022-07-01_104_EB019_eyeCamLeft.mj2:
+    crop: 0, 640, 0, 480
+  \2022-07-04_101_EB017_eyeCamLeft.mj2:
+    crop: 0, 640, 0, 480
+  \2022-07-05_101_EB017_eyeCamLeft.mj2:
+    crop: 0, 640, 0, 480
 bodyparts:
 - pupil_top
 - pupil_bot
@@ -41,17 +47,29 @@ bodyparts:
 - watertube
 
     # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
 start: 0
 stop: 1
 numframes2pick: 40
 
     # Plotting configuration
-skeleton:
-- - bodypart1
-  - bodypart2
-- - objectA
-  - bodypart3
-skeleton_color: black
+skeleton: [[pupil_top, pupil_right, pupil_bot, pupil_left], [lid_top, lid_bot]]
+skeleton_color: white
 pcutoff: 0.6
 dotsize: 3
 alphavalue: 0.7
@@ -60,7 +78,7 @@ colormap: jet
     # Training,Evaluation and Analysis configuration
 TrainingFraction:
 - 0.95
-iteration: 8
+iteration: 9
 default_net_type: resnet_50
 default_augmenter: default
 snapshotindex: -1
