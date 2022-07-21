@@ -1,11 +1,19 @@
 # When in deeplabcut environment, in ipython
 
 import deeplabcut
+import os
+from pathlib import Path
 config_path = r'C:\Users\EnnyB\Documents\GitHub\LickDetector\config.yaml' #Change path. Don't forget to change 'Project_path' in the config file.
 videos = [] # This can a list of (paths to) videos
     
 deeplabcut.analyze_videos(config_path,videos,save_as_csv=False)
-deeplabcut.analyze_videos_converth5_to_csv(videos, videotype=".mj2",listofvideos=True)
+
+for thisvideo in videos:
+	thisvideo = Path(thisvideo)
+	print(thisvideo)
+	parent = os.path.dirname(thisvideo)
+	print(parent)
+	deeplabcut.analyze_videos_converth5_to_csv(parent, videotype=".mj2",listofvideos=False)
 
 # Optional --> Check labels
 #deeplabcut.create_labeled_video(config_path,videos,track_method = "skeleton")
