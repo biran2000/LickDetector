@@ -1,8 +1,8 @@
 %% User Input
 ServerDir = 'U:\';
-SaveDir = 'E:\Data\ResultsOngoing'
-Mouse = 'EB017'
-thisdate = '20220704'
+SaveDir = 'H:\SfN_2022\'
+Mouse = 'EB013'
+thisdate = '20220315'
 thisses = '101'
 nexample = 10;
 
@@ -42,6 +42,7 @@ if any(PotentialLicks)
     set(gca,'ydir','reverse','XTick','','YTick','')
     title('All detected lick positions')
     %% Make GIF
+    if 1
     figure;
     filename = fullfile(SaveDir,Mouse,datestr(datenum(thisdate,'yyyymmdd'),'yyyy-mm-dd'),thisses,'LickDetection.gif'); % Specify the output file name
     countid=1;
@@ -80,6 +81,7 @@ if any(PotentialLicks)
             pause(0.1)
             countid=countid+1;
         end
+    end
     end
 else
     disp('No licks detected')
